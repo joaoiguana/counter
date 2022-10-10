@@ -4,11 +4,13 @@ const Counter = ({ start, step }) => {
   const [count, setCount] = useState(start);
 
   const handleMinus = () => {
-    if (count !== 0 && (count - step) >= 0) {
-      setCount(count - step);
-    } else {
-      setCount(0);
-    }
+    // if (count >= step) {
+    //   setCount(count - step);
+    // } else {
+    //   setCount(0);
+    // }
+    const newCount = count - step;
+    setCount(Math.max(0, newCount));
   };
 
   const handlePlus = () => {
