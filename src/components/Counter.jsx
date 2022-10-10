@@ -4,11 +4,11 @@ const Counter = () => {
   const [count, setCount] = useState(0);
 
   const handleMinus = () => {
-    setCount(count - 1)
+    setCount(count - 1);
   };
 
   const handlePlus = () => {
-    setCount(count + 1)
+    setCount(count + 1);
   };
 
   return <div className="m-3 d-flex align-items-center justify-content-center">
