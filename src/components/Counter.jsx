@@ -1,10 +1,12 @@
 import { useState } from 'react';
 
-const Counter = () => {
-  const [count, setCount] = useState(0);
+const Counter = ({ start }) => {
+  const [count, setCount] = useState(start);
 
   const handleMinus = () => {
-    setCount(count - 1);
+    if (count !== 0) {
+      setCount(count - 1);
+    }
   };
 
   const handlePlus = () => {

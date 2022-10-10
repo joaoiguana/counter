@@ -6,7 +6,8 @@ import Counter from './components/Counter';
 const App = () => {
   return (
     <div>
-      <Counter />
+      <Counter start={10}/>
+      <Counter start={5}/>
     </div>
   );
 }
