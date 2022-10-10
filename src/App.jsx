@@ -6,8 +6,8 @@ import Counter from './components/Counter';
 const App = () => {
   return (
     <div>
-      <Counter start={10}/>
-      <Counter start={5}/>
+      <Counter start={10} step={6} />
+      <Counter start={10} />
     </div>
   );
 }
